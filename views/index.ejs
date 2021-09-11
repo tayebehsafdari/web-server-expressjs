@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+<h1><%= title %></h1>
+<ul>
+    <% list.forEach(item=>{ %>
+        <%- include('./layouts/item',{item: item}) %>
+    <% }) %>
+</ul>
+<h2 id="test"></h2>
+<script src="custom.js"></script>
+</body>
+</html>
